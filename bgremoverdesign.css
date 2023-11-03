@@ -1,0 +1,200 @@
+body{
+    background-repeat: no-repeat;
+}
+
+.title{
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    
+    display: flexbox;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    height:auto;   
+}
+
+#website-name{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 5rem;   
+    margin-bottom: 0;
+    mix-blend-mode: screen;
+    background-color: white;
+}
+
+#tagline{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-top: 0;
+    mix-blend-mode: screen;
+    background-color: white;
+    
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7vh;
+}
+
+
+
+.form{
+    display:flexbox;
+    
+    height: 40vh;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+
+/* input[type=file]{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #AA6769;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2vh;
+    letter-spacing: 1.2px;
+    user-select: none;
+    border: none;
+    border-radius: 5px;
+} */
+
+
+.buttons{
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    margin-top: 3vh;
+    
+    
+}
+.buttons button{
+    color: aliceblue;
+    width: 20vw;
+    height: 8vh;
+    margin-left: 1vw;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.upload-box{
+    font-size: 1.2rem;
+    background-color: #8D5F60;
+    
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 2vh;
+    letter-spacing: 1.2px;
+}
+.upload-box:hover{
+    box-shadow: 5px 5px 10px #4A2620;
+}
+::-webkit-file-upload-button{
+    color: white;
+    background-color: #4A2620;
+    font-size: 1.5rem;
+    padding: 1%;
+    border-radius: 5px;
+    border: transparent solid 0.5px;
+    box-shadow: 1px 0px 1px 1px #8D5F60;
+    outline: none;
+    margin-right: 30px;
+}
+
+#uploadButton{
+    background-color: #FF2525;
+}
+#previewButton{
+    background-color: #8D5F60;
+}
+#downloadButton{
+    background-color: #4A2620;
+}
+
+.buttons button:hover{
+    transform: translateY(-2px);
+    scale: 1.1;
+}
+
+.overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.preview{
+    position: relative;
+    
+    z-index: 2;
+    width: 25vw;
+    height: 50vh;
+    left: 40vw;
+    top: 15px;    
+}
+.selectedImage {
+    display: none;
+    background-color: #FF2525;
+    position: fixed;
+    width: 25vw;
+    height: 50vh;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.overlay #processed{
+    position: relative;
+    margin-right: 17vw;
+    margin-top: 0;
+    text-align: right;
+    color: white;
+    font-size: 2rem;
+}
+
+.overlay #select{
+    position: relative;
+    top: 60px;
+    margin-left: 17vw;
+    text-align: left;
+    color: white;
+    font-size: 2rem;
+}
+
+#closePreview{
+    color: white;
+    position:relative;
+    top: 10px;
+    float: right;
+    margin-right: 10px;
+    background-color: transparent;
+    font-size: 1.8rem;
+    border: none;
+    
+}
+
+#closePreview:hover{
+    scale: 1.1;
+    font-weight: 700;
+}
